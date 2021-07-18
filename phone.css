@@ -1,0 +1,112 @@
+/* Used media qyeries to design website accr to phone need */
+ /* Navbar adjustment */
+  
+ #navbar{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+}
+#navbar ul li a {
+   
+    padding: 3px ; 
+    margin: 0px 15px;
+   
+
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 120px;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+ 
+/* Service Section  */
+#services-section{
+    
+    flex-direction: column;
+     padding: 20px;
+ 
+    margin-bottom: 50px;
+    }
+    #services-section .services{
+flex-flow: wrap;
+        height: 80%;
+    }
+
+
+
+    /* MEnu section  */
+ 
+   
+    #menu-section::before{
+         
+        height: 104%;
+    
+        width: 100%;
+       
+    }
+#menu-section #box-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-section img{
+  
+    height: 110%;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+
+#clients-section img{
+    margin:20px;
+    width: 20%;
+    height: 17%;
+}
+ #contactus-section .form{
+width: 80%;
+ }
+ #contactus-section .box{
+    
+    width: 80%;
+    height: 25px;
+    
+}
+ #contactus-section .h-secondary{
+    
+    font-size: small;
+    
+}
+#contactus-section::before{
+    
+    height: 120%;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+footer::before{
+    margin-top: 52px;
+    content: "";
+    background-color: black;
+    position: absolute;
+  
+    left: 0px;
+    height: 55px;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}

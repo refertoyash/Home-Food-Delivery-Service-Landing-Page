@@ -1,0 +1,376 @@
+ /* Css reset  */
+ *{
+     margin: 0px;
+     padding: 0px;
+
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+
+
+
+
+
+ /* navbar */
+
+
+
+
+ #navbar{
+     border: 2px solid black;
+     display: flex;
+     align-items: center;
+     top: 0px;
+ 
+ }
+
+ #navbar::before{
+     content: "";
+     background-color: rgb(17,24,39);
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     height: 90px;
+
+     width: 100%;
+     z-index: -1;
+     opacity: 0.7;
+ }
+
+ /* navbar: logo  */
+
+ #navbar #logo {
+     margin: 2px;
+     padding: 2px;
+ }
+ #navbar #logo img{
+     height: 76px;
+     width: 90px;
+     transition: all 0.5s  cubic-bezier(0.2, 0.97, 0.58, 1) 0s;
+ }
+ #navbar #logo img:hover{
+     cursor: pointer;
+  transform: rotate(360deg);
+ }
+
+ /* navbar items */
+
+   #navbar ul {
+       display: flex;
+
+   }
+   #navbar ul li {
+       list-style: none;
+       font-size: 1.7vw;
+   }
+   #navbar ul li a {
+       text-decoration: none;
+       color: white;
+       display: block;
+       padding: 3px 22px;
+       margin: 0px 15px;
+       border-radius: 20px;
+       font-family: 'Pattaya', sans-serif;
+
+
+   }
+   #navbar ul li a:hover{
+       color: black;
+       background-color: white;
+   }
+
+
+
+
+   /* Home Css */
+
+
+
+   #home{
+       display: flex;
+       align-items: center;
+       height: 500px;
+       justify-content: center;
+   }
+   #home::before{
+    content: "";
+    background: url(/images/bg.jpg) no-repeat center center/cover;
+    /* background: url(https://source.unsplash.com/collection/190727/1600x900)  no-repeat center center/cover ; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 550px;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+   }  
+
+/* aligning home segment */
+#homesegment{
+    display: flex;
+    flex-flow: column;
+ 
+    align-items: center;
+
+}
+#homesegment h2{
+    font-family: 'Pattaya', sans-serif;
+ font-size: 3vw;
+ color:white;
+ /* text-shadow: -17px 14px 5px black; */
+ text-shadow:  5px 5px #a71616;
+
+ transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s;
+}
+#homesegment h2:hover , .h-primary {
+     cursor: pointer;
+    font-size: 3.5vw;
+   
+}
+
+#homesegment p{
+    color:#0d0a0a;
+    /* text-shadow:   -18px 7px 3px black; */
+    text-shadow: -3px 3px 1px  #ffb2aa;;
+    font-family: 'Pattaya', sans-serif;
+/* word-spacing: 7px; */
+letter-spacing: 1px;
+font-weight: 600;
+    font-size: 1.8vw;
+}
+
+
+
+
+
+/* Service section CSS */
+
+
+#services-section{
+display: flex;
+flex-direction: row;
+ 
+justify-content:space-evenly;
+margin-bottom: 50px;
+}
+ 
+#services-section .services{
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    height: 360px;
+    justify-content: center;
+    border: 2px solid red;
+    box-shadow: 6px 6px 4px brown;
+    padding: 25px;
+    margin: 45px;
+   background-color:#fff1f1b8;
+    border-radius: 40px;
+    transition: all 0.5s ease-in 0s;
+}
+#services-section .services:hover{
+
+ cursor: pointer;
+    height: 380px;
+
+
+}
+#services-section img{
+    padding: 30px;
+    margin-top: 0px;
+    width: 150px;
+    height: 90px;
+}
+.service-details{
+    text-align: center;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-bottom: 4px;
+    font-size: 20px;
+
+}
+
+
+
+/* Menu Section CSS */
+
+
+#menu-section{
+    position: relative;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+     align-items: center;
+    margin: 20px;
+justify-content: center;
+ 
+}
+
+#menu-section #box-1{
+    margin-bottom:20px ;
+}
+#menu-section::before{
+    content: "";
+    background: url(/images/menubg1.png) no-repeat center center/cover;
+    position: absolute;
+   /* top: 1140px; */
+    left: 0px;
+    height: 110%;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#menu-section img{
+  
+    height: 614px;
+    width: 45%;
+    margin: 0px 20px;
+}
+
+
+
+/* Clients Section CSS */
+
+
+
+#clients-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#clients-section img{
+    margin:20px;
+    width: 150px;
+    height: 150px;
+}
+#clients-section::before{
+    content: "";
+    background: url(/images/clientbg.jpg) no-repeat center center/cover;
+    position: absolute;
+     
+    left: 0px;
+    height: 105%;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+
+/* Contact Us CSS */
+
+
+
+#contactus-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contactus-section::before{
+    margin-top: 15px;
+    content: "";
+    background: url(/images/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+  
+    left: 0px;
+    height: 785px;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contactus-section .box{
+    font-family: 'Baloo Tamma 2', cursive;
+font-weight: bold;
+font-size: 2vw;
+    margin: 3px;
+    display: inline;
+    width: 519px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+
+
+
+/* Footer CSS */
+
+
+
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+footer::before{
+    margin-top: 52px;
+    content: "";
+    background-color: black;
+    position: absolute;
+  
+    left: 0px;
+    height: 45px;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+
+
+
+/* Css of Utility Classes */
+/* (Used too frequently same css for all place needs) */
+
+
+.btn{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    font-family: 'Playfair Display', serif;
+font-weight: bolder;
+    font-size: 1.8vw;
+    background-color: rgb(245, 57, 57);
+   transition: all 0.5s ease-in 0s;
+}
+.btn:hover{
+cursor: pointer;
+background-color: rgb(132, 196, 13);
+font-size: 2vw;
+box-shadow: 2px 2px 2px red;
+transform: rotate(360deg);
+/* transform: rotate(); */
+}
+
+
+.h-primary{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 3vw;
+    transition: all 0.5s cubic-bezier(0.5, 0.49, 0, 0.56) 0s;
+}
+.h-primary:hover{
+ 
+    font-size: 3.8vw;
+}
+/* .h-primary{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 40px;
+} */
+.h-secondary{
+    
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 200px;
+    font-family: 'Playfair Display', serif;
+}
